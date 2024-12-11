@@ -1,8 +1,15 @@
 # embedding-cmp - Naively compare embedding models for NLP
 
 This is to check how good is the distance between 2 small sentences' embeddings.
+
+Each of the test sentences is compared against the 1st sentence in the test: the cosinus is used as distance between embeddings and it is compared against the expected value (0:same meaning, 1:unrelated). So only one 'meaning' is tested.
+
 Tests run against text in English and Czech.
+
+
 ⚠️ Please note that the text used for benchmark is currently extremely small: just 5 sentences !!!
+
+
 
 
 ### Install
@@ -25,8 +32,7 @@ python3 benchmark.py | tee out.md  && cat out.md | grep 'avg score' | cut -d: -f
 ## Results:
 
 
-
-detailed output: [ out.md ](out.md)
+detailed output:   [ out.md ](out.md)
 
 Average scores:
 

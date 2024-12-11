@@ -51,7 +51,7 @@ def compute_embedding_score(efname,dname,test_data,test_name):
     
     max = np.max(diffs)  
     diffns = diffs/max 
-
+    print("## ",test_name,"|",efname)
     print("| test | embedding | score | expected distance | actual distance norm | raw actual distance | text |")
     print("| -----| --------- | ----- | ----------------- | -------------------- | ------------------- | ---- |")
     

@@ -1,3 +1,4 @@
+##  en | ollama/nomic-embed-text:latest
 | test | embedding | score | expected distance | actual distance norm | raw actual distance | text |
 | -----| --------- | ----- | ----------------- | -------------------- | ------------------- | ---- |
 | en | ollama/nomic-embed-text:latest | 8.149646e-15 | 0 | 9.027539e-08 | 5.9604645e-08 | Increase the car weight
@@ -8,6 +9,7 @@
 | en | ollama/nomic-embed-text:latest | 2.0167984e-06 | 1 | 0.99857986 | 0.6593159 | Tonight I'll treat myself with a good movie and hot chocolate
 | en | ollama/nomic-embed-text:latest | 0.0 | 1 | 1.0 | 0.6602535 | We and our 7 partners store and access personal data, like browsing data or unique identifiers, on your device
 #### avg score: |  en  |  0.024561154  | ollama/nomic-embed-text:latest  |
+##  en | ollama/mxbai-embed-large
 | test | embedding | score | expected distance | actual distance norm | raw actual distance | text |
 | -----| --------- | ----- | ----------------- | -------------------- | ------------------- | ---- |
 | en | ollama/mxbai-embed-large | 0.0 | 0 | -1.8405912e-07 | -1.1920929e-07 | Increase the car weight
@@ -18,6 +20,7 @@
 | en | ollama/mxbai-embed-large | 3.1416497e-05 | 1 | 0.99439496 | 0.64403826 | Tonight I'll treat myself with a good movie and hot chocolate
 | en | ollama/mxbai-embed-large | 0.0 | 1 | 1.0 | 0.6476685 | We and our 7 partners store and access personal data, like browsing data or unique identifiers, on your device
 #### avg score: |  en  |  0.0067326217  | ollama/mxbai-embed-large  |
+##  en | ollama/all-minilm
 | test | embedding | score | expected distance | actual distance norm | raw actual distance | text |
 | -----| --------- | ----- | ----------------- | -------------------- | ------------------- | ---- |
 | en | ollama/all-minilm | 0.0 | 0 | 0.0 | 0.0 | Increase the car weight
@@ -28,6 +31,7 @@
 | en | ollama/all-minilm | 0.01888532 | 1 | 0.8625761 | 0.9303433 | Tonight I'll treat myself with a good movie and hot chocolate
 | en | ollama/all-minilm | 0.0 | 1 | 1.0 | 1.0785637 | We and our 7 partners store and access personal data, like browsing data or unique identifiers, on your device
 #### avg score: |  en  |  0.016708583  | ollama/all-minilm  |
+##  en | ollama/bge-m3
 | test | embedding | score | expected distance | actual distance norm | raw actual distance | text |
 | -----| --------- | ----- | ----------------- | -------------------- | ------------------- | ---- |
 | en | ollama/bge-m3 | 3.6526907e-14 | 0 | 1.9112014e-07 | 1.1920929e-07 | Increase the car weight
@@ -38,6 +42,7 @@
 | en | ollama/bge-m3 | 0.014872856 | 1 | 0.8780457 | 0.5476723 | Tonight I'll treat myself with a good movie and hot chocolate
 | en | ollama/bge-m3 | 0.0 | 1 | 1.0 | 0.6237401 | We and our 7 partners store and access personal data, like browsing data or unique identifiers, on your device
 #### avg score: |  en  |  0.009786382  | ollama/bge-m3  |
+##  en | ollama/bge-large
 | test | embedding | score | expected distance | actual distance norm | raw actual distance | text |
 | -----| --------- | ----- | ----------------- | -------------------- | ------------------- | ---- |
 | en | ollama/bge-large | 0.0 | 0 | -1.9825343e-07 | -1.1920929e-07 | Increase the car weight
@@ -48,6 +53,7 @@
 | en | ollama/bge-large | 0.0 | 1 | 1.0 | 0.6012975 | Tonight I'll treat myself with a good movie and hot chocolate
 | en | ollama/bge-large | 0.0032585245 | 1 | 0.9429165 | 0.5669733 | We and our 7 partners store and access personal data, like browsing data or unique identifiers, on your device
 #### avg score: |  en  |  0.007063392  | ollama/bge-large  |
+##  en | ollama/paraphrase-multilingual
 | test | embedding | score | expected distance | actual distance norm | raw actual distance | text |
 | -----| --------- | ----- | ----------------- | -------------------- | ------------------- | ---- |
 | en | ollama/paraphrase-multilingual | 0.0 | 0 | -1.2785489e-07 | -1.1920929e-07 | Increase the car weight
@@ -58,6 +64,7 @@
 | en | ollama/paraphrase-multilingual | 0.011883891 | 1 | 0.89098674 | 0.8307378 | Tonight I'll treat myself with a good movie and hot chocolate
 | en | ollama/paraphrase-multilingual | 0.0 | 1 | 1.0 | 0.93237954 | We and our 7 partners store and access personal data, like browsing data or unique identifiers, on your device
 #### avg score: |  en  |  0.01369808  | ollama/paraphrase-multilingual  |
+##  en | ollama/snowflake-arctic-embed
 | test | embedding | score | expected distance | actual distance norm | raw actual distance | text |
 | -----| --------- | ----- | ----------------- | -------------------- | ------------------- | ---- |
 | en | ollama/snowflake-arctic-embed | 4.6015295e-14 | 0 | 2.1451176e-07 | 5.9604645e-08 | Increase the car weight
@@ -68,6 +75,7 @@
 | en | ollama/snowflake-arctic-embed | 0.0 | 1 | 1.0 | 0.2778619 | Tonight I'll treat myself with a good movie and hot chocolate
 | en | ollama/snowflake-arctic-embed | 0.0069073075 | 1 | 0.9168898 | 0.25476873 | We and our 7 partners store and access personal data, like browsing data or unique identifiers, on your device
 #### avg score: |  en  |  0.017452465  | ollama/snowflake-arctic-embed  |
+##  en | seznam/Seznam/retromae-small-cs
 | test | embedding | score | expected distance | actual distance norm | raw actual distance | text |
 | -----| --------- | ----- | ----------------- | -------------------- | ------------------- | ---- |
 | en | seznam/Seznam/retromae-small-cs | 0.0 | 0 | 0.0 | 0.0 | Increase the car weight
@@ -78,6 +86,7 @@
 | en | seznam/Seznam/retromae-small-cs | 0.0018139557 | 1 | 0.95740944 | 0.29837155 | Tonight I'll treat myself with a good movie and hot chocolate
 | en | seznam/Seznam/retromae-small-cs | 0.0 | 1 | 1.0 | 0.31164467 | We and our 7 partners store and access personal data, like browsing data or unique identifiers, on your device
 #### avg score: |  en  |  0.087387495  | seznam/Seznam/retromae-small-cs  |
+##  en | seznam/Seznam/dist-mpnet-paracrawl-cs-en
 | test | embedding | score | expected distance | actual distance norm | raw actual distance | text |
 | -----| --------- | ----- | ----------------- | -------------------- | ------------------- | ---- |
 | en | seznam/Seznam/dist-mpnet-paracrawl-cs-en | 3.0020866e-15 | 0 | 5.47913e-08 | 5.9604645e-08 | Increase the car weight
@@ -88,6 +97,7 @@
 | en | seznam/Seznam/dist-mpnet-paracrawl-cs-en | 0.022837095 | 1 | 0.8488805 | 0.92345357 | Tonight I'll treat myself with a good movie and hot chocolate
 | en | seznam/Seznam/dist-mpnet-paracrawl-cs-en | 0.0 | 1 | 1.0 | 1.0878487 | We and our 7 partners store and access personal data, like browsing data or unique identifiers, on your device
 #### avg score: |  en  |  0.009483382  | seznam/Seznam/dist-mpnet-paracrawl-cs-en  |
+##  en | seznam/Seznam/dist-mpnet-czeng-cs-en
 | test | embedding | score | expected distance | actual distance norm | raw actual distance | text |
 | -----| --------- | ----- | ----------------- | -------------------- | ------------------- | ---- |
 | en | seznam/Seznam/dist-mpnet-czeng-cs-en | 0.0 | 0 | -1.11338764e-07 | -1.1920929e-07 | Increase the car weight
@@ -98,6 +108,7 @@
 | en | seznam/Seznam/dist-mpnet-czeng-cs-en | 0.028144682 | 1 | 0.83223623 | 0.8910669 | Tonight I'll treat myself with a good movie and hot chocolate
 | en | seznam/Seznam/dist-mpnet-czeng-cs-en | 0.0 | 1 | 1.0 | 1.0706899 | We and our 7 partners store and access personal data, like browsing data or unique identifiers, on your device
 #### avg score: |  en  |  0.011588998  | seznam/Seznam/dist-mpnet-czeng-cs-en  |
+##  en | seznam/Seznam/simcse-retromae-small-cs
 | test | embedding | score | expected distance | actual distance norm | raw actual distance | text |
 | -----| --------- | ----- | ----------------- | -------------------- | ------------------- | ---- |
 | en | seznam/Seznam/simcse-retromae-small-cs | 0.0 | 0 | 0.0 | 0.0 | Increase the car weight
@@ -108,6 +119,7 @@
 | en | seznam/Seznam/simcse-retromae-small-cs | 0.0008647941 | 1 | 0.9705926 | 0.89146376 | Tonight I'll treat myself with a good movie and hot chocolate
 | en | seznam/Seznam/simcse-retromae-small-cs | 0.0 | 1 | 1.0 | 0.91847366 | We and our 7 partners store and access personal data, like browsing data or unique identifiers, on your device
 #### avg score: |  en  |  0.0474934  | seznam/Seznam/simcse-retromae-small-cs  |
+##  en | seznam/Seznam/simcse-dist-mpnet-paracrawl-cs-en
 | test | embedding | score | expected distance | actual distance norm | raw actual distance | text |
 | -----| --------- | ----- | ----------------- | -------------------- | ------------------- | ---- |
 | en | seznam/Seznam/simcse-dist-mpnet-paracrawl-cs-en | 0.0 | 0 | -1.1021927e-07 | -1.1920929e-07 | Increase the car weight
@@ -118,6 +130,7 @@
 | en | seznam/Seznam/simcse-dist-mpnet-paracrawl-cs-en | 0.021766989 | 1 | 0.8524636 | 0.9219947 | Tonight I'll treat myself with a good movie and hot chocolate
 | en | seznam/Seznam/simcse-dist-mpnet-paracrawl-cs-en | 0.0 | 1 | 1.0 | 1.0815649 | We and our 7 partners store and access personal data, like browsing data or unique identifiers, on your device
 #### avg score: |  en  |  0.010463563  | seznam/Seznam/simcse-dist-mpnet-paracrawl-cs-en  |
+##  en | seznam/Seznam/simcse-dist-mpnet-czeng-cs-en
 | test | embedding | score | expected distance | actual distance norm | raw actual distance | text |
 | -----| --------- | ----- | ----------------- | -------------------- | ------------------- | ---- |
 | en | seznam/Seznam/simcse-dist-mpnet-czeng-cs-en | 3.1836004e-15 | 0 | 5.6423403e-08 | 5.9604645e-08 | Increase the car weight
@@ -128,6 +141,7 @@
 | en | seznam/Seznam/simcse-dist-mpnet-czeng-cs-en | 0.025746625 | 1 | 0.83954245 | 0.8868772 | Tonight I'll treat myself with a good movie and hot chocolate
 | en | seznam/Seznam/simcse-dist-mpnet-czeng-cs-en | 0.0 | 1 | 1.0 | 1.0563816 | We and our 7 partners store and access personal data, like browsing data or unique identifiers, on your device
 #### avg score: |  en  |  0.014435664  | seznam/Seznam/simcse-dist-mpnet-czeng-cs-en  |
+##  en | seznam/Seznam/simcse-small-e-czech
 | test | embedding | score | expected distance | actual distance norm | raw actual distance | text |
 | -----| --------- | ----- | ----------------- | -------------------- | ------------------- | ---- |
 | en | seznam/Seznam/simcse-small-e-czech | 0.0 | 0 | 0.0 | 0.0 | Increase the car weight
@@ -138,16 +152,18 @@
 | en | seznam/Seznam/simcse-small-e-czech | 0.0002182718 | 1 | 0.985226 | 0.06774682 | Tonight I'll treat myself with a good movie and hot chocolate
 | en | seznam/Seznam/simcse-small-e-czech | 0.002308658 | 1 | 0.9519515 | 0.065458775 | We and our 7 partners store and access personal data, like browsing data or unique identifiers, on your device
 #### avg score: |  en  |  0.1259871  | seznam/Seznam/simcse-small-e-czech  |
+##  en | random
 | test | embedding | score | expected distance | actual distance norm | raw actual distance | text |
 | -----| --------- | ----- | ----------------- | -------------------- | ------------------- | ---- |
-| en | random | 5.728125899423629e-31 | 0 | 7.5684383458039935e-16 | 2.220446049250313e-16 | Increase the car weight
-| en | random | 0.9928416730890928 | 0 | 0.9964144083106651 | 0.2923303771875376 | Increasing weight of the car
-| en | random | 0.5156658700222576 | 0.1 | 0.8930074508479187 | 0.2619926034392124 | Make the truck more heavy
-| en | random | 0.3944359869539522 | 0.2 | 0.961612054783212 | 0.2821199817447989 | Change the vehicle gross tonnage
-| en | random | 0.05901196737228669 | 0.6 | 0.9368746838796481 | 0.2748624743196231 | Change the colour of the vehicle
-| en | random | 0.0 | 1 | 1.0 | 0.29338232641894313 | Tonight I'll treat myself with a good movie and hot chocolate
-| en | random | 0.04687244221009012 | 1 | 0.7834995560972446 | 0.22986492251601887 | We and our 7 partners store and access personal data, like browsing data or unique identifiers, on your device
-#### avg score: |  en  |  0.28697541994966846  | random  |
+| en | random | 0.0 | 0 | -8.379547850192584e-16 | -2.220446049250313e-16 | Increase the car weight
+| en | random | 0.6887014548112628 | 0 | 0.8298803858456125 | 0.21990501839056453 | Increasing weight of the car
+| en | random | 0.45645611726420693 | 0.1 | 0.8460923545659181 | 0.22420093059718138 | Make the truck more heavy
+| en | random | 0.43520000000000003 | 0.2 | 1.0 | 0.26498399304435993 | Change the vehicle gross tonnage
+| en | random | 0.08127296644756764 | 0.6 | 0.9953405699461192 | 0.2637493186633717 | Change the colour of the vehicle
+| en | random | 0.01240520308539033 | 1 | 0.8886213526505626 | 0.2354704343298264 | Tonight I'll treat myself with a good movie and hot chocolate
+| en | random | 0.009597498721424546 | 1 | 0.9020331754039943 | 0.23902435267703392 | We and our 7 partners store and access personal data, like browsing data or unique identifiers, on your device
+#### avg score: |  en  |  0.240519034332836  | random  |
+##  cz | ollama/nomic-embed-text:latest
 | test | embedding | score | expected distance | actual distance norm | raw actual distance | text |
 | -----| --------- | ----- | ----------------- | -------------------- | ------------------- | ---- |
 | cz | ollama/nomic-embed-text:latest | 2.2459092e-14 | 0 | 1.4986358e-07 | 5.9604645e-08 | Zvyšte hmotnost vozu
@@ -158,6 +174,7 @@
 | cz | ollama/nomic-embed-text:latest | 0.008967036 | 1 | 0.90530556 | 0.36006355 | Dnes večer si dopřeji dobrý film a horkou čokoládu
 | cz | ollama/nomic-embed-text:latest | 0.005704744 | 1 | 0.92447025 | 0.36768585 | My a našich 7 partnerů ukládáme a přistupujeme k osobním údajům, jako jsou údaje o prohlížení nebo jedinečné identifikátory, na vašem zařízení
 #### avg score: |  cz  |  0.16318573  | ollama/nomic-embed-text:latest  |
+##  cz | ollama/mxbai-embed-large
 | test | embedding | score | expected distance | actual distance norm | raw actual distance | text |
 | -----| --------- | ----- | ----------------- | -------------------- | ------------------- | ---- |
 | cz | ollama/mxbai-embed-large | 1.1812751e-13 | 0 | 3.4369683e-07 | 1.1920929e-07 | Zvyšte hmotnost vozu
@@ -168,6 +185,7 @@
 | cz | ollama/mxbai-embed-large | 0.0 | 1 | 1.0 | 0.34684432 | Dnes večer si dopřeji dobrý film a horkou čokoládu
 | cz | ollama/mxbai-embed-large | 0.005919736 | 1 | 0.9230602 | 0.32015818 | My a našich 7 partnerů ukládáme a přistupujeme k osobním údajům, jako jsou údaje o prohlížení nebo jedinečné identifikátory, na vašem zařízení
 #### avg score: |  cz  |  0.16328217  | ollama/mxbai-embed-large  |
+##  cz | ollama/all-minilm
 | test | embedding | score | expected distance | actual distance norm | raw actual distance | text |
 | -----| --------- | ----- | ----------------- | -------------------- | ------------------- | ---- |
 | cz | ollama/all-minilm | 0.0 | 0 | -1.6985611e-07 | -1.1920929e-07 | Zvyšte hmotnost vozu
@@ -178,6 +196,7 @@
 | cz | ollama/all-minilm | 0.0005317647 | 1 | 0.97694 | 0.68564105 | Dnes večer si dopřeji dobrý film a horkou čokoládu
 | cz | ollama/all-minilm | 0.0 | 1 | 1.0 | 0.70182514 | My a našich 7 partnerů ukládáme a přistupujeme k osobním údajům, jako jsou údaje o prohlížení nebo jedinečné identifikátory, na vašem zařízení
 #### avg score: |  cz  |  0.14391151  | ollama/all-minilm  |
+##  cz | ollama/bge-m3
 | test | embedding | score | expected distance | actual distance norm | raw actual distance | text |
 | -----| --------- | ----- | ----------------- | -------------------- | ------------------- | ---- |
 | cz | ollama/bge-m3 | 0.0 | 0 | 0.0 | 0.0 | Zvyšte hmotnost vozu
@@ -188,6 +207,7 @@
 | cz | ollama/bge-m3 | 0.01419473 | 1 | 0.88085836 | 0.5540801 | Dnes večer si dopřeji dobrý film a horkou čokoládu
 | cz | ollama/bge-m3 | 0.0 | 1 | 1.0 | 0.62902296 | My a našich 7 partnerů ukládáme a přistupujeme k osobním údajům, jako jsou údaje o prohlížení nebo jedinečné identifikátory, na vašem zařízení
 #### avg score: |  cz  |  0.013817386  | ollama/bge-m3  |
+##  cz | ollama/bge-large
 | test | embedding | score | expected distance | actual distance norm | raw actual distance | text |
 | -----| --------- | ----- | ----------------- | -------------------- | ------------------- | ---- |
 | cz | ollama/bge-large | 0.0 | 0 | -3.528495e-07 | -1.1920929e-07 | Zvyšte hmotnost vozu
@@ -198,6 +218,7 @@
 | cz | ollama/bge-large | 0.0 | 1 | 1.0 | 0.3378474 | Dnes večer si dopřeji dobrý film a horkou čokoládu
 | cz | ollama/bge-large | 0.0041936836 | 1 | 0.93524134 | 0.31596887 | My a našich 7 partnerů ukládáme a přistupujeme k osobním údajům, jako jsou údaje o prohlížení nebo jedinečné identifikátory, na vašem zařízení
 #### avg score: |  cz  |  0.16212781  | ollama/bge-large  |
+##  cz | ollama/paraphrase-multilingual
 | test | embedding | score | expected distance | actual distance norm | raw actual distance | text |
 | -----| --------- | ----- | ----------------- | -------------------- | ------------------- | ---- |
 | cz | ollama/paraphrase-multilingual | 0.0 | 0 | -1.4144757e-07 | -1.1920929e-07 | Zvyšte hmotnost vozu
@@ -208,6 +229,7 @@
 | cz | ollama/paraphrase-multilingual | 0.0 | 1 | 1.0 | 0.84278077 | Dnes večer si dopřeji dobrý film a horkou čokoládu
 | cz | ollama/paraphrase-multilingual | 6.394762e-06 | 1 | 0.9974712 | 0.84064955 | My a našich 7 partnerů ukládáme a přistupujeme k osobním údajům, jako jsou údaje o prohlížení nebo jedinečné identifikátory, na vašem zařízení
 #### avg score: |  cz  |  0.013660907  | ollama/paraphrase-multilingual  |
+##  cz | ollama/snowflake-arctic-embed
 | test | embedding | score | expected distance | actual distance norm | raw actual distance | text |
 | -----| --------- | ----- | ----------------- | -------------------- | ------------------- | ---- |
 | cz | ollama/snowflake-arctic-embed | 8.327897e-14 | 0 | 2.8858096e-07 | 5.9604645e-08 | Zvyšte hmotnost vozu
@@ -218,6 +240,7 @@
 | cz | ollama/snowflake-arctic-embed | 0.0033734962 | 1 | 0.9419182 | 0.19454747 | Dnes večer si dopřeji dobrý film a horkou čokoládu
 | cz | ollama/snowflake-arctic-embed | 0.018542537 | 1 | 0.863829 | 0.17841864 | My a našich 7 partnerů ukládáme a přistupujeme k osobním údajům, jako jsou údaje o prohlížení nebo jedinečné identifikátory, na vašem zařízení
 #### avg score: |  cz  |  0.24907477  | ollama/snowflake-arctic-embed  |
+##  cz | seznam/Seznam/retromae-small-cs
 | test | embedding | score | expected distance | actual distance norm | raw actual distance | text |
 | -----| --------- | ----- | ----------------- | -------------------- | ------------------- | ---- |
 | cz | seznam/Seznam/retromae-small-cs | 0.0 | 0 | 0.0 | 0.0 | Zvyšte hmotnost vozu
@@ -228,6 +251,7 @@
 | cz | seznam/Seznam/retromae-small-cs | 0.04929435 | 1 | 0.7779767 | 0.2677902 | Dnes večer si dopřeji dobrý film a horkou čokoládu
 | cz | seznam/Seznam/retromae-small-cs | 0.0 | 1 | 1.0 | 0.34421366 | My a našich 7 partnerů ukládáme a přistupujeme k osobním údajům, jako jsou údaje o prohlížení nebo jedinečné identifikátory, na vašem zařízení
 #### avg score: |  cz  |  0.0933737  | seznam/Seznam/retromae-small-cs  |
+##  cz | seznam/Seznam/dist-mpnet-paracrawl-cs-en
 | test | embedding | score | expected distance | actual distance norm | raw actual distance | text |
 | -----| --------- | ----- | ----------------- | -------------------- | ------------------- | ---- |
 | cz | seznam/Seznam/dist-mpnet-paracrawl-cs-en | 3.0134813e-15 | 0 | 5.4895185e-08 | 5.9604645e-08 | Zvyšte hmotnost vozu
@@ -238,6 +262,7 @@
 | cz | seznam/Seznam/dist-mpnet-paracrawl-cs-en | 0.023910936 | 1 | 0.8453684 | 0.9178926 | Dnes večer si dopřeji dobrý film a horkou čokoládu
 | cz | seznam/Seznam/dist-mpnet-paracrawl-cs-en | 0.0 | 1 | 1.0 | 1.08579 | My a našich 7 partnerů ukládáme a přistupujeme k osobním údajům, jako jsou údaje o prohlížení nebo jedinečné identifikátory, na vašem zařízení
 #### avg score: |  cz  |  0.02148078  | seznam/Seznam/dist-mpnet-paracrawl-cs-en  |
+##  cz | seznam/Seznam/dist-mpnet-czeng-cs-en
 | test | embedding | score | expected distance | actual distance norm | raw actual distance | text |
 | -----| --------- | ----- | ----------------- | -------------------- | ------------------- | ---- |
 | cz | seznam/Seznam/dist-mpnet-czeng-cs-en | 0.0 | 0 | -1.10681434e-07 | -1.1920929e-07 | Zvyšte hmotnost vozu
@@ -248,6 +273,7 @@
 | cz | seznam/Seznam/dist-mpnet-czeng-cs-en | 0.027491687 | 1 | 0.8341938 | 0.89846736 | Dnes večer si dopřeji dobrý film a horkou čokoládu
 | cz | seznam/Seznam/dist-mpnet-czeng-cs-en | 0.0 | 1 | 1.0 | 1.0770487 | My a našich 7 partnerů ukládáme a přistupujeme k osobním údajům, jako jsou údaje o prohlížení nebo jedinečné identifikátory, na vašem zařízení
 #### avg score: |  cz  |  0.020721983  | seznam/Seznam/dist-mpnet-czeng-cs-en  |
+##  cz | seznam/Seznam/simcse-retromae-small-cs
 | test | embedding | score | expected distance | actual distance norm | raw actual distance | text |
 | -----| --------- | ----- | ----------------- | -------------------- | ------------------- | ---- |
 | cz | seznam/Seznam/simcse-retromae-small-cs | 0.0 | 0 | 0.0 | 0.0 | Zvyšte hmotnost vozu
@@ -258,6 +284,7 @@
 | cz | seznam/Seznam/simcse-retromae-small-cs | 0.0 | 1 | 1.0 | 0.8806111 | Dnes večer si dopřeji dobrý film a horkou čokoládu
 | cz | seznam/Seznam/simcse-retromae-small-cs | 0.0005550955 | 1 | 0.97643954 | 0.8598635 | My a našich 7 partnerů ukládáme a přistupujeme k osobním údajům, jako jsou údaje o prohlížení nebo jedinečné identifikátory, na vašem zařízení
 #### avg score: |  cz  |  0.105709486  | seznam/Seznam/simcse-retromae-small-cs  |
+##  cz | seznam/Seznam/simcse-dist-mpnet-paracrawl-cs-en
 | test | embedding | score | expected distance | actual distance norm | raw actual distance | text |
 | -----| --------- | ----- | ----------------- | -------------------- | ------------------- | ---- |
 | cz | seznam/Seznam/simcse-dist-mpnet-paracrawl-cs-en | 3.058623e-15 | 0 | 5.530482e-08 | 5.9604645e-08 | Zvyšte hmotnost vozu
@@ -268,6 +295,7 @@
 | cz | seznam/Seznam/simcse-dist-mpnet-paracrawl-cs-en | 0.022154432 | 1 | 0.85115635 | 0.9173318 | Dnes večer si dopřeji dobrý film a horkou čokoládu
 | cz | seznam/Seznam/simcse-dist-mpnet-paracrawl-cs-en | 0.0 | 1 | 1.0 | 1.0777477 | My a našich 7 partnerů ukládáme a přistupujeme k osobním údajům, jako jsou údaje o prohlížení nebo jedinečné identifikátory, na vašem zařízení
 #### avg score: |  cz  |  0.03154919  | seznam/Seznam/simcse-dist-mpnet-paracrawl-cs-en  |
+##  cz | seznam/Seznam/simcse-dist-mpnet-czeng-cs-en
 | test | embedding | score | expected distance | actual distance norm | raw actual distance | text |
 | -----| --------- | ----- | ----------------- | -------------------- | ------------------- | ---- |
 | cz | seznam/Seznam/simcse-dist-mpnet-czeng-cs-en | 3.266894e-15 | 0 | 5.715675e-08 | 5.9604645e-08 | Zvyšte hmotnost vozu
@@ -278,6 +306,7 @@
 | cz | seznam/Seznam/simcse-dist-mpnet-czeng-cs-en | 0.026330028 | 1 | 0.8377347 | 0.873613 | Dnes večer si dopřeji dobrý film a horkou čokoládu
 | cz | seznam/Seznam/simcse-dist-mpnet-czeng-cs-en | 0.0 | 1 | 1.0 | 1.0428277 | My a našich 7 partnerů ukládáme a přistupujeme k osobním údajům, jako jsou údaje o prohlížení nebo jedinečné identifikátory, na vašem zařízení
 #### avg score: |  cz  |  0.04250988  | seznam/Seznam/simcse-dist-mpnet-czeng-cs-en  |
+##  cz | seznam/Seznam/simcse-small-e-czech
 | test | embedding | score | expected distance | actual distance norm | raw actual distance | text |
 | -----| --------- | ----- | ----------------- | -------------------- | ------------------- | ---- |
 | cz | seznam/Seznam/simcse-small-e-czech | 4.2146852e-13 | 0 | 6.492061e-07 | 5.9604645e-08 | Zvyšte hmotnost vozu
@@ -288,13 +317,14 @@
 | cz | seznam/Seznam/simcse-small-e-czech | 0.09734399 | 1 | 0.688 | 0.06316638 | Dnes večer si dopřeji dobrý film a horkou čokoládu
 | cz | seznam/Seznam/simcse-small-e-czech | 4.9008045e-06 | 1 | 0.9977862 | 0.091608346 | My a našich 7 partnerů ukládáme a přistupujeme k osobním údajům, jako jsou údaje o prohlížení nebo jedinečné identifikátory, na vašem zařízení
 #### avg score: |  cz  |  0.15957502  | seznam/Seznam/simcse-small-e-czech  |
+##  cz | random
 | test | embedding | score | expected distance | actual distance norm | raw actual distance | text |
 | -----| --------- | ----- | ----------------- | -------------------- | ------------------- | ---- |
-| cz | random | 0.0 | 0 | -7.709863096789523e-16 | -2.220446049250313e-16 | Zvyšte hmotnost vozu
-| cz | random | 0.778656888396785 | 0 | 0.8824153718044496 | 0.2541362539805454 | Zvyšování vahu autu
-| cz | random | 0.6642000000000001 | 0.1 | 1.0 | 0.28800071043737896 | Udělejte náklaďák těžší
-| cz | random | 0.30954120073284125 | 0.2 | 0.8746907796439279 | 0.25191156595047615 | Změňte hrubou tonáž vozidla
-| cz | random | 0.044490391301033196 | 0.6 | 0.8925037517873561 | 0.2570417145827847 | Změňte barvu vozidla
-| cz | random | 0.0038567704307414063 | 1 | 0.9378970980489526 | 0.27011503055525443 | Dnes večer si dopřeji dobrý film a horkou čokoládu
-| cz | random | 0.02941956977498513 | 1 | 0.8284786608757233 | 0.23860244291441668 | My a našich 7 partnerů ukládáme a přistupujeme k osobním údajům, jako jsou údaje o prohlížení nebo jedinečné identifikátory, na vašem zařízení
-#### avg score: |  cz  |  0.2614521172337695  | random  |
+| cz | random | 0.0 | 0 | 0.0 | 0.0 | Zvyšte hmotnost vozu
+| cz | random | 0.8069295661948158 | 0 | 0.8982925838471649 | 0.26584267386965776 | Zvyšování vahu autu
+| cz | random | 0.6642000000000001 | 0.1 | 1.0 | 0.2959421892710272 | Udělejte náklaďák těžší
+| cz | random | 0.22266591381272066 | 0.2 | 0.7722323594956869 | 0.22853613509508452 | Změňte hrubou tonáž vozidla
+| cz | random | 0.030717181119173726 | 0.6 | 0.8430462963146264 | 0.24949296658818165 | Změňte barvu vozidla
+| cz | random | 0.019171560111705753 | 1 | 0.8615385970325818 | 0.2549656185473116 | Dnes večer si dopřeji dobrý film a horkou čokoládu
+| cz | random | 0.03653691463028495 | 1 | 0.8088536826661707 | 0.2393739296481593 | My a našich 7 partnerů ukládáme a přistupujeme k osobním údajům, jako jsou údaje o prohlížení nebo jedinečné identifikátory, na vašem zařízení
+#### avg score: |  cz  |  0.25431730512410017  | random  |
