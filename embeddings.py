@@ -1,19 +1,26 @@
 
-
+print('embeddings-1')
 # https://stackoverflow.com/questions/76958817/streamlit-your-system-has-an-unsupported-version-of-sqlite3-chroma-requires-sq
 __import__("pysqlite3")
+print('embeddings-2')
 import sys
 
+print('embeddings-3')
 sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
 
+print('embeddings-4')
 from chromadb.utils.embedding_functions.ollama_embedding_function import (
     OllamaEmbeddingFunction,
 )
+print('embeddings-5')
 #from sentence_transformers import CrossEncoder
 from chromadb import Documents, EmbeddingFunction, Embeddings
+print('embeddings-6')
 #import torch
 from transformers import AutoModel, AutoTokenizer
+print('embeddings-7')
 import numpy as np
+print('embeddings-8')
 
 
 EMBEDDINGS = [
@@ -101,7 +108,7 @@ def df_cos(a,b):
 def get_distance_func(name):
     if (name=='l2'):
          return df_l2
-    elif (name=='cos'):
+    elif (name=='cosine'):
          return df_cos
     else:
          raise Exception("dunno distance func: "+name)
