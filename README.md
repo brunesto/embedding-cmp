@@ -10,7 +10,8 @@ Tests run against text in English and Czech.
 The test runs against bi-encoders and cross-encoders, this is to check if it makes sense to use a cross-encoder at all.
 
 
-⚠️ Please note that the text used for tests is right now absurdely small: just 5 sentences !!!
+⚠️ Note that the text used for tests is right now absurdely small: just 5 sentences !!! - so the results should be considered as an indication
+if a language is supported rather than a leaderboad
 
 
 
