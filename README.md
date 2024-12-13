@@ -1,13 +1,16 @@
 # embedding-cmp - Naively compare embedding models for NLP
 
-This is to check how good is the distance between 2 small sentences' embeddings.
+This is to check how good is the distance between 2 small sentences' embeddings. The goal is to make sure a language is supported by the
+embedding.
 
 Each of the test sentences is compared against the 1st sentence in the test: the cosinus is used as distance between embeddings and it is compared against the expected value (0:same meaning, 1:unrelated). So only one 'meaning' is tested.
 
 Tests run against text in English and Czech.
 
+The test runs against bi-encoders and cross-encoders, this is to check if it makes sense to use a cross-encoder at all.
 
-⚠️ Please note that the text used for benchmark is currently extremely small: just 5 sentences !!!
+
+⚠️ Please note that the text used for tests is right now absurdely small: just 5 sentences !!!
 
 
 
@@ -18,8 +21,8 @@ python3 -m venv  .venv
 . .venv/bin/activate
 pip install -r requirements.txt
 
-
-ollama pull mxbai-embed-large snowflake-arctic-embed all-minilm bge-m3 bge-large paraphrase-multilingual
+# pull the ollama models
+echo "mxbai-embed-large snowflake-arctic-embed all-minilm bge-m3 bge-large paraphrase-multilingual" | xargs -n1 ollama pull 
 ```
 
 ### run the tests and sort avg scores (lower score == better)
@@ -34,48 +37,59 @@ python3 benchmark.py | tee out.md  && cat out.md | grep 'avg score' | cut -d: -f
 
 detailed output:   [ out.md ](out.md)
 
+Note on score:
+Some models of Seznam have not been trained on English, interestingly it is still better than random
+Some other models have not been trained in Czech (e.g.snowflake-arctic-embed)
+As expected chromadb-ollama and langchain-ollama give exactly the same result
 Average scores:
 
-###  Czech
+###  sorted by Language/Score
 
-| lang |score | embedding |
-| --- | --- | --- |
-  |  cz  |  0.013660907  | ollama/paraphrase-multilingual  |
- |  cz  |  0.013817386  | ollama/bge-m3  |
- |  cz  |  0.020721983  | seznam/Seznam/dist-mpnet-czeng-cs-en  |
- |  cz  |  0.02148078  | seznam/Seznam/dist-mpnet-paracrawl-cs-en  |
- |  cz  |  0.03154919  | seznam/Seznam/simcse-dist-mpnet-paracrawl-cs-en  |
- |  cz  |  0.04250988  | seznam/Seznam/simcse-dist-mpnet-czeng-cs-en  |
- |  cz  |  0.0933737  | seznam/Seznam/retromae-small-cs  |
- |  cz  |  0.105709486  | seznam/Seznam/simcse-retromae-small-cs  |
- |  cz  |  0.14391151  | ollama/all-minilm  |
- |  cz  |  0.15957502  | seznam/Seznam/simcse-small-e-czech  |
- |  cz  |  0.16212781  | ollama/bge-large  |
- |  cz  |  0.16318573  | ollama/nomic-embed-text:latest  |
- |  cz  |  0.16328217  | ollama/mxbai-embed-large  |
- |  cz  |  0.2319737827575458  | random  |
- |  cz  |  0.24907477  | ollama/snowflake-arctic-embed  |
+| lang |score | embedding | type |
+| --- | --- | --- | --- |
+ |  cz  |      0.0137  | chromadb-ollama/paraphrase-multilingual  | embedding |
+ |  cz  |      0.0137  | langchain-ollama/paraphrase-multilingual  | embedding |
+ |  cz  |      0.0138  | chromadb-ollama/bge-m3  | embedding |
+ |  cz  |      0.0138  | langchain-ollama/bge-m3  | embedding |
+ |  cz  |      0.0207  | seznam/Seznam/dist-mpnet-czeng-cs-en  | embedding |
+ |  cz  |      0.0215  | seznam/Seznam/dist-mpnet-paracrawl-cs-en  | embedding |
+ |  cz  |      0.0315  | seznam/Seznam/simcse-dist-mpnet-paracrawl-cs-en  | embedding |
+ |  cz  |      0.0425  | seznam/Seznam/simcse-dist-mpnet-czeng-cs-en  | embedding |
+ |  cz  |      0.0934  | seznam/Seznam/retromae-small-cs  | embedding |
+ |  cz  |      0.1057  | seznam/Seznam/simcse-retromae-small-cs  | embedding |
+ |  cz  |      0.1439  | chromadb-ollama/all-minilm  | embedding |
+ |  cz  |      0.1439  | langchain-ollama/all-minilm  | embedding |
+ |  cz  |      0.1596  | seznam/Seznam/simcse-small-e-czech  | embedding |
+ |  cz  |      0.1621  | chromadb-ollama/bge-large  | embedding |
+ |  cz  |      0.1621  | langchain-ollama/bge-large  | embedding |
+ |  cz  |      0.1632  | chromadb-ollama/nomic-embed-text:latest  | embedding |
+ |  cz  |      0.1632  | langchain-ollama/nomic-embed-text:latest  | embedding |
+ |  cz  |      0.1633  | chromadb-ollama/mxbai-embed-large  | embedding |
+ |  cz  |      0.1633  | langchain-ollama/mxbai-embed-large  | embedding |
+ |  cz  |      0.2221  | random  | embedding |
+ |  cz  |      0.2491  | chromadb-ollama/snowflake-arctic-embed  | embedding |
+ |  cz  |      0.2491  | langchain-ollama/snowflake-arctic-embed  | embedding |
+ |  en  |      0.0067  | chromadb-ollama/mxbai-embed-large  | embedding |
+ |  en  |      0.0067  | langchain-ollama/mxbai-embed-large  | embedding |
+ |  en  |      0.0071  | chromadb-ollama/bge-large  | embedding |
+ |  en  |      0.0071  | langchain-ollama/bge-large  | embedding |
+ |  en  |      0.0095  | seznam/Seznam/dist-mpnet-paracrawl-cs-en  | embedding |
+ |  en  |      0.0098  | chromadb-ollama/bge-m3  | embedding |
+ |  en  |      0.0098  | langchain-ollama/bge-m3  | embedding |
+ |  en  |      0.0105  | seznam/Seznam/simcse-dist-mpnet-paracrawl-cs-en  | embedding |
+ |  en  |      0.0116  | seznam/Seznam/dist-mpnet-czeng-cs-en  | embedding |
+ |  en  |      0.0137  | chromadb-ollama/paraphrase-multilingual  | embedding |
+ |  en  |      0.0137  | langchain-ollama/paraphrase-multilingual  | embedding |
+ |  en  |      0.0144  | seznam/Seznam/simcse-dist-mpnet-czeng-cs-en  | embedding |
+ |  en  |      0.0167  | chromadb-ollama/all-minilm  | embedding |
+ |  en  |      0.0167  | langchain-ollama/all-minilm  | embedding |
+ |  en  |      0.0175  | chromadb-ollama/snowflake-arctic-embed  | embedding |
+ |  en  |      0.0175  | langchain-ollama/snowflake-arctic-embed  | embedding |
+ |  en  |      0.0246  | chromadb-ollama/nomic-embed-text:latest  | embedding |
+ |  en  |      0.0246  | langchain-ollama/nomic-embed-text:latest  | embedding |
+ |  en  |      0.0475  | seznam/Seznam/simcse-retromae-small-cs  | embedding |
+ |  en  |      0.0874  | seznam/Seznam/retromae-small-cs  | embedding |
+ |  en  |      0.1260  | seznam/Seznam/simcse-small-e-czech  | embedding |
+ |  en  |      0.2962  | random  | embedding |
+
  
-snowflake-arctic-embed  beeing worst than random is an artifact of the test. It is as bad as random, because it does not support the Czech language
-
-###  English
-
-| lang |score | embedding |
-| --- | --- | --- |
- |  en  |  0.0067326217  | ollama/mxbai-embed-large  |
- |  en  |  0.007063392  | ollama/bge-large  |
- |  en  |  0.009483382  | seznam/Seznam/dist-mpnet-paracrawl-cs-en  |
- |  en  |  0.009786382  | ollama/bge-m3  |
- |  en  |  0.010463563  | seznam/Seznam/simcse-dist-mpnet-paracrawl-cs-en  |
- |  en  |  0.011588998  | seznam/Seznam/dist-mpnet-czeng-cs-en  |
- |  en  |  0.01369808  | ollama/paraphrase-multilingual  |
- |  en  |  0.014435664  | seznam/Seznam/simcse-dist-mpnet-czeng-cs-en  |
- |  en  |  0.016708583  | ollama/all-minilm  |
- |  en  |  0.017452465  | ollama/snowflake-arctic-embed  |
- |  en  |  0.024561154  | ollama/nomic-embed-text:latest  |
- |  en  |  0.0474934  | seznam/Seznam/simcse-retromae-small-cs  |
- |  en  |  0.087387495  | seznam/Seznam/retromae-small-cs  |
- |  en  |  0.1259871  | seznam/Seznam/simcse-small-e-czech  |
- |  en  |  0.27706046534385825  | random  |
-
- I understand it as the last 3 models of Seznam have not been trained on English

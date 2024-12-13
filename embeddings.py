@@ -21,17 +21,28 @@ from transformers import AutoModel, AutoTokenizer
 print('embeddings-7')
 import numpy as np
 print('embeddings-8')
+#from langchain_openai.embeddings import OpenAIEmbeddings
+from langchain_ollama import OllamaEmbeddings
+
 
 
 EMBEDDINGS = [
-    "ollama/nomic-embed-text:latest",
-    "ollama/mxbai-embed-large",
+    "chromadb-ollama/nomic-embed-text:latest",
+    "chromadb-ollama/mxbai-embed-large",
     #"ollama/snowflake-arctic-embed",
-    "ollama/all-minilm",
-    "ollama/bge-m3",
-    "ollama/bge-large",
-    "ollama/paraphrase-multilingual",
-    "ollama/snowflake-arctic-embed",    
+    "chromadb-ollama/all-minilm",
+    "chromadb-ollama/bge-m3",
+    "chromadb-ollama/bge-large",
+    "chromadb-ollama/paraphrase-multilingual",
+    "chromadb-ollama/snowflake-arctic-embed",    
+    "langchain-ollama/nomic-embed-text:latest",
+    "langchain-ollama/mxbai-embed-large",
+    #"ollama/snowflake-arctic-embed",
+    "langchain-ollama/all-minilm",
+    "langchain-ollama/bge-m3",
+    "langchain-ollama/bge-large",
+    "langchain-ollama/paraphrase-multilingual",
+    "langchain-ollama/snowflake-arctic-embed",    
     "seznam/Seznam/retromae-small-cs",
     "seznam/Seznam/dist-mpnet-paracrawl-cs-en",
     "seznam/Seznam/dist-mpnet-czeng-cs-en",
@@ -75,10 +86,13 @@ def get_embedding_func(config_str):
     retVal = None
     config = config_str.split("/", 1)
     #print("embedding:", str(config))
-    if config[0] == "ollama":
+    if config[0] == "chromadb-ollama":
         retVal = OllamaEmbeddingFunction(
             url="http://localhost:11434/api/embeddings", model_name=config[1]
         )
+    elif config[0] == "langchain-ollama":
+        embed = OllamaEmbeddings(model=config[1])
+        retVal=lambda t:[embed.embed_query(t)]
     elif config[0] == "seznam":
         retVal = SeznamEmbeddings(config[1])
     elif config[0] == "random":        
@@ -92,7 +106,7 @@ def get_embedding_func(config_str):
     return retVal
 
 
-
+# TODO only cos is used, so just hardcode it
 def df_l2(a,b):
     x= np.linalg.norm(np.array(a)-np.array(b))
     return x/(1+x)
@@ -103,7 +117,7 @@ def df_cos(a,b):
     #return spatial.distance.cosine(a, b)
     # using np
     b= np.transpose(b)
-    return 1-np.dot(a,b)/(np.linalg.norm(a)*np.linalg.norm(b))
+    return 1.0-np.dot(a,b)/(np.linalg.norm(a)*np.linalg.norm(b))
 
 def get_distance_func(name):
     if (name=='l2'):
